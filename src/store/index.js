@@ -25,7 +25,7 @@ export default new Vuex.Store({
       return axios({
         method: "post",
         url: "http://localhost:3000/data",
-        data: JSON.stringify(state),
+        data: JSON.stringify({name: state.inputValue, id: i++ }),
       })
       .then(response => {
         console.log(response);
