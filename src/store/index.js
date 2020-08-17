@@ -22,6 +22,7 @@ export default new Vuex.Store({
       }
     },
     SET_PALINDROM: (state) => {
+      let i = 0;
       return axios({
         method: "post",
         url: "http://localhost:3000/data",
